@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supabase Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src=""></script>
+</head>
+<body>
+  <div class="auth-container" id="auth">
+    <h2>Login / Sign Up</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </div>
+
+  <div class="app-container hidden" id="app">
+    <h2>Welcome <span id="userEmail"></span></h2>
+
+    <div class="profile">
+      <img id="avatar" src="" alt="Profile Photo" width="100">
+      <input type="file" id="avatarUpload">
+      <button id="uploadBtn">Upload Photo</button>
+    </div>
+
+    <div class="todos">
+      <h3>Your Todos</h3>
+      <input type="text" id="newTodo" placeholder="Enter todo...">
+      <button id="addTodoBtn">Add Todo</button>
+      <ul id="todoList"></ul>
+    </div>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
